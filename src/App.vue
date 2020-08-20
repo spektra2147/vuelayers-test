@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    <Map/>
+    <BaseMap/>
   </div>
 </template>
-
 <script>
-export default {
+  import BaseMap from './components/base-map/base.vue'
+
+
+  export default {
   name: 'App',
+    components: {
+      BaseMap
+    }
 }
 </script>
 
